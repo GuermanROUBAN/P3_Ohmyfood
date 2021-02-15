@@ -1,0 +1,44 @@
+
+CHAPITRE LES TRANSITIONS:
+
+Pour créer une transition, vous aurez besoin de plusieurs informations :
+
+une propriété CSS à modifier ;
+
+une valeur initiale pour votre propriété CSS ;
+
+une valeur finale pour cette même propriété ;
+
+une durée ;
+
+un événement pour déclencher votre transition.
+
+-> propriété  transform  et sa fonction  scale(). scale()  permet de modifier la taille d’un élément, selon la valeur qu’on lui donne, sachant que 0 = 0 % et 1 = 100 %.
+
+
+
+CHAPITRE LES PSEUDOCLASSES:
+
+Une pseudoclasse s’apparente à un if/else pour le CSS. Elle est interprétée si la condition de la pseudoclasse est à true.
+
+Même s’il en existe d’autres, voici une liste des pseudoclasses les plus couramment utilisées pour déclencher des transitions :
+
+:hover, qui est déclenché au survol de la souris ;
+
+:active, activé au clic de l'utilisateur (le plus souvent pour les liens et boutons) ;
+
+:focus, qui se déclenche lorsque son élément reçoit le focus (soit il est sélectionné à l'aide du clavier, soit il est activé avec la souris) ;
+
+:valid, dont la validation du contenu s'effectue correctement par rapport au type de donnée attendu ;
+
+:invalid, qui inversement, correspond à un élément dont la validation du contenu ne s'effectue pas correctement par rapport au type de donnée attendu ;
+
+:not(), qui correspond à la négation. Elle prend un sélecteur en argument et permet de cibler les éléments qui ne sont pas représentés par cet argument ;
+
+:checked, qui correspond aux input de type checkbox, option ou radio qui sont cochés ;
+
+:enabled, un élément avec lequel on peut interagir ;
+
+:disabled, qui correspond à un élément dont l'interaction a été bloquée.
+
+Les pseudoclasses sont essentielles pour déclencher une transition en CSS.

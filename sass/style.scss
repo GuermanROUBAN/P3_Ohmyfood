@@ -1,6 +1,53 @@
 
 body
 {
-background: yellowgreen;
-color: blueviolet;
+background: rgb(129, 139, 108);
+color: rgb(220, 243, 10);
+}
+
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+.btn {
+    background: $cd-btn;
+    color: $cd-txt;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+	 transform: scale(1);/*etat initial du boutton*/
+	 transition-property: transform; /*pour ajouter de la fluidité*/
+    transition-duration: 100ms; /*vous permet d'indiquer la durée que prendra votre transition*/
+	 /*autre moyen de declarer-> transition: transform 400ms;*/
+	 &:hover{
+	 transform: scale(1.15); /*etat du boutton apres survol*/
+	}
+}
+
+$cd-txt: #6300a0;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+
+.form {
+    &__group {
+        & input {
+        border: 2px solid white;
+        border-radius: 100rem;
+        color: $cd-txt;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        outline: none;
+        padding: .5rem 1.5rem;
+        width: 100%;
+        &:focus /*permet de montrer à un utilisateur qu'il a bien selectionné l'input */{
+            border: 2px solid $cd-txt;
+            }
+				
+				&:not(:focus):invalid  /*grace à not la couleur rouge n'apparait que si l'adresse email n'est pas valide*/{
+				background: $cd-danger;
+				border: 2px solid $cd-danger;
+				color: $cd-txt--invalid;
+			  }
+        }
+
+
+    }
 }

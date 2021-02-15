@@ -1,6 +1,45 @@
+@charset "UTF-8";
 body {
-  background: yellowgreen;
-  color: blueviolet;
+  background: #818b6c;
+  color: #dcf30a;
+}
+
+.btn {
+  background: #011c37;
+  color: #15DEA5;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  transform: scale(1);
+  /*etat initial du boutton*/
+  transition-property: transform;
+  /*pour ajouter de la fluidité*/
+  transition-duration: 100ms;
+  /*vous permet d'indiquer la durée que prendra votre transition*/
+  /*autre moyen de declarer-> transition: transform 400ms;*/
+}
+.btn:hover {
+  transform: scale(1.15);
+  /*etat du boutton apres survol*/
+}
+
+.form__group input {
+  border: 2px solid white;
+  border-radius: 100rem;
+  color: #6300a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+.form__group input:focus {
+  border: 2px solid #6300a0;
+}
+.form__group input:not(:focus):invalid {
+  background: #b20a37;
+  border: 2px solid #b20a37;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
