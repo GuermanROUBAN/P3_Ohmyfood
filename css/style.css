@@ -56,19 +56,16 @@ button {
   margin: 0 auto;
 }
 
-.header {
-  background: #9356DC;
-  height: 10rem;
+header {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
 }
-.header__logo {
-  font-size: 7rem;
-  color: #FF79DA;
-  margin-left: 10rem;
-  text-shadow: 0.55rem 0.55rem #fff;
+
+header .icone {
+  display: none;
+}
+
+header img {
+  margin: auto;
 }
 
 .nav {
@@ -142,6 +139,40 @@ button {
   outline: none;
   padding: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+footer {
+  height: 195px;
+  font-size: 14px;
+  background-color: #3d3a3a;
+  color: #fff;
+}
+
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.footer__body h2 {
+  margin: 25px 0px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.body__row {
+  display: flex;
+  align-items: center;
+}
+
+.body__row i {
+  width: 8%;
+  font-size: 80%;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
 }
 
 .quote {
@@ -363,6 +394,10 @@ table {
 
 td, th {
   padding: 0;
+}
+
+.main {
+  max-width: 375px;
 }
 
 /*# sourceMappingURL=style.css.map */
