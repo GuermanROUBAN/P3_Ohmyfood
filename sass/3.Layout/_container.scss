@@ -2,22 +2,39 @@
     display:flex;
     flex-direction: column;
 	max-width: 375px;
-
-
 }
 
 .section1{
     display:flex;
     flex-direction: column;
-    height: 290px;
+    height: 340px;
     align-items: center;
     text-align: center;
     background: ($colour-header2);
 }
 
+form{
+    width:100%;
+    background: ($colour-header1);
+}
+
+form ::placeholder{
+    color:black;
+}
+ 
 input{
     height: 50px;
     border: none;
     text-align: center;
+    background: ($colour-header1);
 }
 
+.section1 h2{
+    margin: 40px 0 26px 0px;
+    font-weight: 900;
+}
+
+.section1 p{
+    margin-bottom: 34px;
+
+}

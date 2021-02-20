@@ -17,19 +17,15 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 1.7;
+  font-size: 16px;
 }
 
 h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 5rem;
 }
 
 textarea {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
 }
 
 button {
@@ -40,11 +36,11 @@ button {
 }
 
 .section1 {
-  background: #cfcfcf;
+  background: #cec2c2;
 }
 
 input {
-  background: #c9c6c6;
+  background: #eee3e3;
 }
 
 button {
@@ -86,16 +82,35 @@ header img {
 .section1 {
   display: flex;
   flex-direction: column;
-  height: 290px;
+  height: 340px;
   align-items: center;
   text-align: center;
-  background: #c9c6c6;
+  background: #eee3e3;
+}
+
+form {
+  width: 100%;
+  background: #cec2c2;
+}
+
+form ::placeholder {
+  color: black;
 }
 
 input {
   height: 50px;
   border: none;
   text-align: center;
+  background: #cec2c2;
+}
+
+.section1 h2 {
+  margin: 40px 0 26px 0px;
+  font-weight: 900;
+}
+
+.section1 p {
+  margin-bottom: 34px;
 }
 
 footer {
@@ -111,10 +126,8 @@ footer {
   margin-left: 20px;
 }
 
-.footer__body h2 {
+.footer__body h1 {
   margin: 25px 0px;
-  font-style: italic;
-  font-weight: 800;
 }
 
 .body__row {
