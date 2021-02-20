@@ -21,7 +21,8 @@
         }
 }
 
-@mixin btn {
+@mixin button {
+    border-radius: 50px;
     padding: $grid-gutter;
     @include border;
     color: $colour-primary;
