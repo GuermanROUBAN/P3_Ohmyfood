@@ -1,3 +1,4 @@
+
 @mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
     text-shadow: $offset $offset $colour;
 }
@@ -45,4 +46,42 @@
     object-fit: cover;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
+}
+
+
+
+@mixin block_card_title
+{
+    h2{display:inline-block;
+		margin: 30px 0 25px 20px;
+		border-bottom: solid 5px ($colour-tertiary);
+		padding-right:5px;}
+	}
+
+@mixin card_menu{
+display:flex;
+flex-direction: column;
+width: 90%;
+height: 70px;
+margin:auto;
+margin-bottom: 10px;
+border-radius: 16px;
+background: white;
+}
+
+@mixin card_menu_title
+{
+	h3{
+		margin: 16px 0 5px 10px;
+		font-weight: 800;}
+}	
+
+@mixin card_menu_texte{
+display:flex;
+justify-content: space-between;
+width:90%;
+margin-left:10px;
+span{
+    font-weight: 800;
+    width: 10%;}
 }

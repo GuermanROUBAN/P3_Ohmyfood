@@ -1,0 +1,73 @@
+
+@import "./2.Utils/variables";
+@import "./2.Utils/functions";
+@import "./2.Utils/mixins";
+@import "./2.Utils/extensions";
+
+@import "./1.Base/base";
+@import "./1.Base/typography";
+
+@import "./3.Layout/header";
+@import "./3.Layout/nav";
+@import "./3.Layout/container";
+@import "./3.Layout/form";
+@import "./3.Layout/footer";
+
+@import "./4.Composants/buttons";
+
+
+
+.section__head img{
+	width: 100%;
+	height: 256px;
+}
+.section__body{
+	height:1160px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	background-color: ($colour-header2);
+}
+
+.body__title{
+	display:flex;
+	align-items: center;
+	h1{
+		margin:38px 0 10px 20px;
+		font-size: 26px;
+	}
+	p{
+		margin-left:34px;
+		i{
+			font-size: 2.5rem;
+		}
+	}
+}
+
+.body__card--entrees, .body__card--plats, .body__card--desserts{
+@include block_card_title
+}
+
+.body__card{
+@include card_menu
+}
+.card__title
+{
+@include card_menu_title
+}	
+.card__texte{
+@include card_menu_texte
+}
+.section__footer{
+	display:flex;
+	margin-top: 40px;
+	background: forestgreen;
+}
+.section__footer button{
+	margin:auto;
+}
+
+
+
+
+
+
