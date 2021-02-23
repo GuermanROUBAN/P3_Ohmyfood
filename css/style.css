@@ -317,6 +317,9 @@ button--full-width {
   border-top-right-radius: 45px;
   background-color: #eee3e3;
 }
+.section__body--adapteed {
+  height: 1270px;
+}
 
 .body__title {
   display: flex;
@@ -370,10 +373,15 @@ button--full-width {
 .section__footer {
   display: flex;
   margin-top: 40px;
-  background: forestgreen;
 }
-
 .section__footer button {
+  margin: auto;
+}
+.section__footer--adapteed {
+  display: flex;
+  margin-top: 48px;
+}
+.section__footer--adapteed button {
   margin: auto;
 }
 

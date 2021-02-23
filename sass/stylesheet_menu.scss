@@ -26,6 +26,8 @@
 	border-top-left-radius: 45px;
 	border-top-right-radius: 45px;
 	background-color: ($colour-header2);
+	&--adapteed{height:1270px;
+	}
 }
 
 .body__title{
@@ -60,11 +62,16 @@
 .section__footer{
 	display:flex;
 	margin-top: 40px;
-	background: forestgreen;
+	button{margin:auto};
+	&--adapteed{
+	display:flex;
+	margin-top:48px ;
+	button{margin:auto};
+	}
 }
-.section__footer button{
-	margin:auto;
-}
+
+
+
 
 
 
