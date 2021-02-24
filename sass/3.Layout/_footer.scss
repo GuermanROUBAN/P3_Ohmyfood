@@ -11,18 +11,27 @@ footer{
 	margin-left: 20px;
 }
 
+.footer__body{
+	p{line-height: 1.8;}
+	a{line-height: 1.8;}
+}
+
 .footer__body h1{
+	font-size: 1.8rem;
 	margin: 25px 0px;
 }
 
 .body__row{
 	display: flex;
 	align-items: center;
-}
-
-.body__row i{
+	p{
+		line-height: 1.8;
+	}
+	
+	i{
 	width: 8%;
 	font-size: 80%;
+	}
 }
 
 .link{
