@@ -382,12 +382,9 @@ button--full-width {
 .body__title h1 {
   margin: 38px 0 10px 20px;
   font-size: 26px;
-  background: chartreuse;
 }
-.body__title p {
-  margin-left: 34px;
-}
-.body__title p i {
+.body__title i {
+  margin: 38px 0 10px 40px;
   font-size: 2.5rem;
 }
 
