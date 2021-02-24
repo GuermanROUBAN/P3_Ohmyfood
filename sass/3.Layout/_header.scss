@@ -1,12 +1,20 @@
 header{
 	display:flex;
-	width:100%;
 	height: 65px;
 	align-items: center;
+	position: relative;
+	a{
+		display: flex;
+		align-items: center;
+	}
+	a:visited 
+	{ 
+	 color :black
+	}
 
-}
-header .icone{
-	display:none;
+	i {font-size: 1.8rem;
+		position:absolute;
+		left:5%;}
 }
 header img{
 	width: 50%;
