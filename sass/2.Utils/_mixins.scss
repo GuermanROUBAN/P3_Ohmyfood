@@ -55,11 +55,15 @@
 
 @mixin block_card_title
 {
-    h2{display:inline-block;
+    h2{
+        display:inline-block;
 		margin: 30px 0 25px 20px;
-		border-bottom: solid 5px ($colour-tertiary);
 		padding-right:5px;}
-	}
+        .greenline {
+        border-bottom: solid 5px ($colour-tertiary);}
+}
+
+
 
 @mixin card_menu{
 display:flex;

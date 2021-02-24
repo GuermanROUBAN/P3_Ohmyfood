@@ -352,12 +352,14 @@ button--full-width {
   margin: 0 auto;
 }
 
-.section__head img {
+.section img {
   width: 100%;
   height: 256px;
 }
 
 .section__body {
+  position: relative;
+  margin-top: -40px;
   height: 1160px;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
@@ -365,7 +367,11 @@ button--full-width {
 }
 
 .section__body--adapteed {
+  position: relative;
+  margin-top: -40px;
   height: 1270px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
   background-color: #F6F6F6;
 }
 
@@ -388,8 +394,10 @@ button--full-width {
 .body__card--entrees h2, .body__card--plats h2, .body__card--desserts h2 {
   display: inline-block;
   margin: 30px 0 25px 20px;
-  border-bottom: solid 5px #99E2D0;
   padding-right: 5px;
+}
+.body__card--entrees .greenline, .body__card--plats .greenline, .body__card--desserts .greenline {
+  border-bottom: solid 5px #99E2D0;
 }
 
 .body__card {
