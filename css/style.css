@@ -100,14 +100,6 @@ button {
   font-weight: 900;
 }
 
-.section1 {
-  background: #EAEAEA;
-}
-
-input {
-  background: #F6F6F6;
-}
-
 header {
   display: flex;
   justify-content: center;

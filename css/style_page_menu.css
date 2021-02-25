@@ -100,14 +100,6 @@ button {
   font-weight: 900;
 }
 
-.section1 {
-  background: #EAEAEA;
-}
-
-input {
-  background: #F6F6F6;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -223,9 +215,12 @@ button--full-width {
   max-width: 375px;
 }
 
-.section img {
+.card3__picture3--photo_menu img {
   width: 100%;
   height: 256px;
+  object-fit: cover;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
 }
 
 .section__body {
@@ -314,6 +309,31 @@ button--full-width {
 }
 .section__footer--adapteed button {
   margin: auto;
+}
+
+@media screen and (min-width: 376px) and (max-width: 667px) {
+  .main {
+    background: blue;
+    max-width: 667px;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 992px) {
+  .main {
+    background: green;
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .main {
+    background: coral;
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .main {
+    background: darkblue;
+    max-width: 2240px;
+  }
 }
 
 /*# sourceMappingURL=style_page_menu.css.map */
