@@ -6,7 +6,7 @@
 }
 
 .section1{
-
+    min-height: 370px;
     height: 100%;
     align-items: center;
     text-align: center;
@@ -16,6 +16,7 @@
 
 
 .section1 h2{
+    
     margin: 40px 0 26px 0px;
     font-size: 2.8rem;
     font-weight: 900;
@@ -35,6 +36,7 @@
 }
 
 .section2__head h2{
+    width:50%;
     font-weight: 900;
     font-size: 2.5rem;
     margin:52px 0 34px 22px;
@@ -48,7 +50,7 @@
     justify-content: center;
     box-shadow: ($colour-header1) 3px 3px 10px;
     font-weight: bold;
-    width:332px;
+    width:85%;
     height:80px;
     margin:0 auto;
     margin-bottom: 20px;
@@ -73,7 +75,7 @@
 
 .icone{
     display:flex;
-    margin-right: 30px;
+    margin-right: 10%;
     font-size:110%;
     color:grey;
     }

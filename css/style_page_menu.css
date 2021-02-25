@@ -139,6 +139,7 @@ header img {
 }
 
 .section1 {
+  min-height: 370px;
   height: 100%;
   align-items: center;
   text-align: center;
@@ -162,6 +163,7 @@ header img {
 }
 
 .section2__head h2 {
+  width: 50%;
   font-weight: 900;
   font-size: 2.5rem;
   margin: 52px 0 34px 22px;
@@ -173,7 +175,7 @@ header img {
   justify-content: center;
   box-shadow: #EAEAEA 3px 3px 10px;
   font-weight: bold;
-  width: 332px;
+  width: 85%;
   height: 80px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -199,7 +201,7 @@ header img {
 
 .icone {
   display: flex;
-  margin-right: 30px;
+  margin-right: 10%;
   font-size: 110%;
   color: grey;
 }
