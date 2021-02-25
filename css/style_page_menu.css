@@ -419,6 +419,12 @@ button--full-width {
   width: 90%;
   margin-left: 10px;
 }
+.card__texte p {
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .card__texte span {
   font-weight: 800;
   width: 10%;

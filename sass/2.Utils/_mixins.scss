@@ -88,6 +88,12 @@ display:flex;
 justify-content: space-between;
 width:90%;
 margin-left:10px;
+p{
+    width:70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+}
 span{
     font-weight: 800;
     width: 10%;}
