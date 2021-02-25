@@ -1,0 +1,185 @@
+
+.main{    
+	display:flex;
+	flex-direction: column;
+  	max-width: 375px;
+
+}
+
+.section1{
+	min-height: 370px;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	background: ($colour-header2);
+}
+
+
+
+.section1 h2{
+	
+	margin: 40px 0 26px 0px;
+	font-size: 2.8rem;
+	font-weight: 900;
+	font-weight: bold;
+
+}
+
+.section1 p{
+	line-height: 120%;
+	margin-bottom: 34px;
+
+}
+
+.section2__body{
+
+	height: 420px;
+}
+
+.section2__head h2{
+	width:50%;
+	font-weight: 900;
+	font-size: 2.5rem;
+	margin:52px 0 34px 22px;
+	
+}
+
+.section2__card
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: ($colour-header1) 3px 3px 10px;
+	font-weight: bold;
+	width:85%;
+	height:80px;
+	margin:0 auto;
+	margin-bottom: 20px;
+	background: ($colour-header2);
+	border-radius: 50px;
+	position:relative;
+	&:hover{
+		 background: ($colour-accent);}
+		 &:hover i {
+			  color:($colour-primary)}
+	}
+	
+
+.number{
+	background: ($colour-primary);
+	border-radius: 50px;
+	padding: 6px 9px;
+	color: white;
+	position:absolute;
+	left:-10px;
+}
+
+.icone{
+	display:flex;
+	margin-right: 10%;
+	font-size:110%;
+	color:grey;
+	}
+
+.card{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section3{
+	background: ($colour-header2);
+	a:visited 
+	{ 
+	 color :black
+	} 
+}
+
+.section3__head{
+	margin: 40px 0 26px 20px;
+	font-size: 2.8rem;
+	font-weight: 900;
+	font-weight: bold;}
+
+.section3__card3{
+	display:flex;
+	flex-direction: column;
+	width:90%;
+	margin:auto;
+	position:relative;
+}
+
+.card3__picture3 img{
+	@include card3
+}
+
+.card3__title3{
+	background: white;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	margin-bottom: 18px;
+	position:relative;
+
+}
+
+.card3__title3 h3{
+	margin:20px 0 5px 16px;
+	font-weight: 600;
+} 
+.card3__title3 p{
+	margin:0 0 18px 16px;
+}
+
+.card3__title3 i{
+	font-size: 2rem;
+	position:absolute;
+	top:30%;
+	left:85%;
+
+}
+
+.card3__pub3{
+	position:absolute;
+	top:10%;
+	left:75%;
+	background:($colour-tertiary);
+	color:($colour-texte);
+	padding: 5px 5px;
+}
+
+@media screen and (min-width: 376px) and (max-width:667px)
+
+{
+	.main{    
+	  background:blue;
+	  max-width: 667px;
+	}	
+}
+
+
+@media screen and (min-width: 667px) and (max-width:992px)
+
+{
+	.main{    
+	  background:green;
+	  max-width: 992px;
+	}	
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1440px)
+
+{
+	.main{    
+	  background:coral;
+	  max-width: 1440px;
+	}
+}
+
+@media screen and (min-width: 1140px)
+{
+	.main{    
+	  background:darkblue;
+	  max-width: 2240px;
+	}
+}
