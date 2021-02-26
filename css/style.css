@@ -359,25 +359,25 @@ button--full-width {
 
 @media screen and (min-width: 376px) and (max-width: 667px) {
   .main {
-    background: blue;
+    background: red;
     max-width: 667px;
   }
 }
 @media screen and (min-width: 667px) and (max-width: 992px) {
   .main {
-    background: green;
+    background: red;
     max-width: 992px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1440px) {
   .main {
-    background: coral;
+    background: red;
     max-width: 1440px;
   }
 }
 @media screen and (min-width: 1140px) {
   .main {
-    background: darkblue;
+    background: red;
     max-width: 2240px;
   }
 }
