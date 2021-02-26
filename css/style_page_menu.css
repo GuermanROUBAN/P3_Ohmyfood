@@ -1,3 +1,23 @@
+@keyframes apparition_progressive {
+  from {
+    height: 200;
+    background: red;
+  }
+  to {
+    height: 400;
+    background: yellow;
+  }
+}
+@keyframes menu_deroulant {
+  from {
+    left: 500;
+    background: red;
+  }
+  to {
+    left: 300;
+    background: yellow;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -123,6 +143,37 @@ header i {
 
 header img {
   display: flex;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.description h3 {
+  font-weight: 600;
+}
+
+.prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.box__encoche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  height: 70px;
+  width: 20%;
+}
+.box__encoche i {
+  font-size: 2.5rem;
+  color: white;
 }
 
 form {
@@ -265,35 +316,12 @@ button--full-width {
 
 .body__card {
   display: flex;
-  flex-direction: column;
   width: 90%;
   height: 70px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-radius: 16px;
   background: white;
-}
-
-.card__title h3 {
-  margin: 16px 0 5px 10px;
-  font-weight: 800;
-}
-
-.card__texte {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin-left: 10px;
-}
-.card__texte p {
-  width: 70%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.card__texte span {
-  font-weight: 800;
-  width: 10%;
 }
 
 .section__footer {
@@ -313,25 +341,21 @@ button--full-width {
 
 @media screen and (min-width: 376px) and (max-width: 667px) {
   .main {
-    background: blue;
     max-width: 667px;
   }
 }
 @media screen and (min-width: 667px) and (max-width: 992px) {
   .main {
-    background: green;
     max-width: 992px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1440px) {
   .main {
-    background: coral;
     max-width: 1440px;
   }
 }
 @media screen and (min-width: 1140px) {
   .main {
-    background: darkblue;
     max-width: 2240px;
   }
 }

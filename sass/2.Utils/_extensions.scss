@@ -1,0 +1,22 @@
+@keyframes apparition_progressive {
+	from{
+		height: 200;
+		background:red;
+	}
+	to{
+		height: 400;
+		background: yellow;
+	}
+}
+
+
+@keyframes menu_deroulant {
+	from{
+		left: 500;
+		background:red;
+	}
+	to{
+		left: 300;
+		background: yellow;
+	}
+}

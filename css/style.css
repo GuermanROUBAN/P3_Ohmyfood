@@ -1,3 +1,23 @@
+@keyframes apparition_progressive {
+  from {
+    height: 200;
+    background: red;
+  }
+  to {
+    height: 400;
+    background: yellow;
+  }
+}
+@keyframes menu_deroulant {
+  from {
+    left: 500;
+    background: red;
+  }
+  to {
+    left: 300;
+    background: yellow;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -123,6 +143,37 @@ header i {
 
 header img {
   display: flex;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.description h3 {
+  font-weight: 600;
+}
+
+.prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.box__encoche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  height: 70px;
+  width: 20%;
+}
+.box__encoche i {
+  font-size: 2.5rem;
+  color: white;
 }
 
 form {
@@ -343,7 +394,8 @@ button--full-width {
 .coeur--plein {
   opacity: 0;
 }
-.coeur--plein:active {
+.coeur--plein:hover {
+  transition-duration: 1s;
   opacity: 1;
   color: red;
 }
@@ -359,25 +411,21 @@ button--full-width {
 
 @media screen and (min-width: 376px) and (max-width: 667px) {
   .main {
-    background: red;
     max-width: 667px;
   }
 }
 @media screen and (min-width: 667px) and (max-width: 992px) {
   .main {
-    background: red;
     max-width: 992px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1440px) {
   .main {
-    background: red;
     max-width: 1440px;
   }
 }
 @media screen and (min-width: 1140px) {
   .main {
-    background: red;
     max-width: 2240px;
   }
 }

@@ -109,6 +109,7 @@
 	position:relative;
 }
 
+
 .card3__picture3 img{
 	@include photo_acceuil
 }
@@ -134,7 +135,8 @@
 
 .coeur{
 	&--plein{opacity:0};
-	&--plein:active{
+	&--plein:hover{
+		transition-duration: 1s;
 		opacity:1;
 		color:red};}
 
@@ -151,7 +153,6 @@
 
 {
 	.main{    
-	  background:red;
 	  max-width: 667px;
 	}	
 }
@@ -161,7 +162,6 @@
 
 {
 	.main{    
-	  background:red;
 	  max-width: 992px;
 	}	
 }
@@ -171,7 +171,6 @@
 
 {
 	.main{    
-	  background:red;
 	  max-width: 1440px;
 	}
 }
@@ -179,7 +178,6 @@
 @media screen and (min-width: 1140px)
 {
 	.main{    
-	  background:red;
 	  max-width: 2240px;
 	}
 }

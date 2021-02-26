@@ -86,16 +86,17 @@ background: white;
 }
 
 @mixin card_menu_title
-{
+{   
+
 	h3{
+        display: inline-block;
 		margin: 16px 0 5px 10px;
 		font-weight: 800;}
 }	
 
 @mixin card_menu_texte{
 display:flex;
-justify-content: space-between;
-width:90%;
+
 margin-left:10px;
 p{
     width:70%;

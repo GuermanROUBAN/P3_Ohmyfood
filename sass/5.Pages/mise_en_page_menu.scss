@@ -49,15 +49,18 @@
 }
 
 .body__card{
-@include card_menu
+	display:flex;
+	width: 90%;
+	height: 70px;
+	margin: auto;
+	margin-bottom: 15px;
+	border-radius: 16px;
+	background:white;
 }
-.card__title
-{
-@include card_menu_title
-}	
-.card__texte{
-@include card_menu_texte
-}
+//.card__title {display: inline-block;width: 70%;background: chartreuse; @include card_menu_title}	
+//	.card__texte{@include card_menu_texte}
+
+
 .section__footer{
 	display:flex;
 	margin-top: 40px;
@@ -72,7 +75,6 @@
 
 {
 	.main{    
-	  background:blue;
 	  max-width: 667px;
 	}	
 }
@@ -82,7 +84,6 @@
 
 {
 	.main{    
-	  background:green;
 	  max-width: 992px;
 	}	
 }
@@ -92,7 +93,6 @@
 
 {
 	.main{    
-	  background:coral;
 	  max-width: 1440px;
 	}
 }
@@ -100,7 +100,6 @@
 @media screen and (min-width: 1140px)
 {
 	.main{    
-	  background:darkblue;
 	  max-width: 2240px;
 	}
 }
