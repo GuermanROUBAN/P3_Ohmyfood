@@ -343,6 +343,10 @@ button--full-width {
   left: 85%;
 }
 
+.card3__title3 i:active {
+  background: red;
+}
+
 .card3__pub3 {
   position: absolute;
   top: 10%;
