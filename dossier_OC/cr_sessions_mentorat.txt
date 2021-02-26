@@ -1,0 +1,74 @@
+SESSION DU 16/02/2021
+Alexandre Grisey
+1. Avancées de l’étudiant sur son projet depuis la dernière session
+
+=> Suivi du cours sur le sass, majorité du cours sur les animations
+
+=> Entrainement pratique du fonctionnement du sass
+
+=> Tout début du projet
+
+2. Principaux sujets abordés pendant la session, obstacles à surmonter (le cas échéant), et actions nécessaires pour atteindre ces objectifs
+
+=> Projet 3, son fonctionnement, ce qu'il y a à faire
+
+=> Animations, sass, etc.
+
+3. Objectifs 'SMART' fixés par l'étudiant et le mentor pour la prochaine session
+
+=> Finir le cours sur les animations
+
+=> Intégrer les 5 maquettes (en 5 pages), en version mobile-first, tout en sachant que 4 des pages sont presque identiques (seuls les textes diffèrent, et ils sont fournis), donc copier/coller pour ces 4 pages.
+
+=> Faire l'adaptation desktop et tablette de ces pages à ta guise. C'est pas la peine d'être très créatif et de faire quelque chose de révolutionnaire, l'important du projet c'est les animations, inutiles de passer trop de temps sur ça ; même si ça doit être fait.
+
+=> Tout ça en gardant en tête les demandes du brief (validation firefox, etc.)
+
+=> Commencer les animations sur les boutons : les boutons qui s’éclaircissent, le coeur qui se remplit de violet.
+
+=> Créer le loading spinner qui recouvre la page d'index à l'ouverture du fichier.
+
+Ce sont des objectifs assez gros, vise juste le plus loin possible sans te mettre la pression. Mais si jamais tu as déjà fait tout ça, envoie-moi un email. Aussi, Google et le Workplace sont tes amis si tu galères trop.
+
+Progression sur Dynamisez une page web avec des animations CSS
+Lancement du projet
+
+SESSION DU 23/02/2021
+Alexandre Grisey
+1. Avancées de l’étudiant sur son projet depuis la dernière session
+
+=> Mise en place du projet, création de l'architecture, de sass, etc.
+
+=> Création des pages HTML, du style
+
+=> Fin de suivi des cours du P3
+
+2. Principaux sujets abordés pendant la session, obstacles à surmonter (le cas échéant), et actions nécessaires pour atteindre ces objectifs
+
+=> Organisation du code
+
+=> Fonctionnement de la compilation de sass
+
+=> Live coding explicatif pour la différenciation des codes, notamment pour le responsive
+
+3. Objectifs 'SMART' fixés par l'étudiant et le mentor pour la prochaine session
+
+=> Déjà, modifier les chemins des fichiers pour supprimer le premier '/'. Aussi, retirer les accents des noms des fichiers.
+
+=> Faire les modifications que je t'ai envoyées par email (adaptation de l'architecture, de la compilation sass, de l'inclusion des css)
+
+=> Continuer sur le style (couleurs, etc.)
+
+=> Travailler sur le responsive tablette et desktop. Comme je t'ai dit, inutile de faire quelque chose d'extraordinaire, l'important c'est que ça soit fait et propre.
+
+=> Si possible, commencer le travail sur les animations (voir le compte rendu de la précédente session pour voir par quoi commencer).
+
+Ne reste pas bloqué une journée complète sur un problème, comme je t'ai dit, après 2h, cherche sur Google, demande de l'aide sur le workplace ou envoie-moi un email.
+
+Progression sur Dynamisez une page web avec des animations CSS
+20% réalisé
+
+
+
+
+
