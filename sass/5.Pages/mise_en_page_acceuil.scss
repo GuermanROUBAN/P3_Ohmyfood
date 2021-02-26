@@ -119,25 +119,24 @@
 	border-bottom-left-radius: 16px;
 	margin-bottom: 18px;
 	position:relative;
-
-}
-
-.card3__title3 h3{
+	h3{
 	margin:20px 0 5px 16px;
-	font-weight: 600;
-} 
-.card3__title3 p{
-	margin:0 0 18px 16px;
-}
-
-.card3__title3 i{
+	font-weight: 600;} 
+	p{
+	margin:0 0 18px 16px;}
+	i{
 	font-size: 2rem;
 	position:absolute;
 	top:30%;
-	left:85%;
+	left:85%;}
 }
-.card3__title3{
-	i:active{background: (red);}}
+
+
+.coeur{
+	&--plein{opacity:0};
+	&--plein:active{
+		opacity:1;
+		color:red};}
 
 .card3__pub3{
 	position:absolute;
