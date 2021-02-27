@@ -1,39 +1,57 @@
 //memo:essayer transform pour le petit coeur.
 
 
-@keyframes apparition_progressive {
-	from{
-		height: 200;
-		background:red;
+@keyframes anim__box {
+	0%{
+		width: 0%;
+		transform: translate(2%,-2%);
 	}
-	to{
-		height: 400;
-		background: yellow;
+	100%{
+		width: 20%;
+}
+}
+
+@keyframes anim__encoche {
+	0%{
+		transform:rotate(270deg);
 	}
+
+	25%{
+		transform:rotate(180deg);	
+	}
+
+
+	50%{
+		transform:rotate(90deg);
+	}
+
+
+	100%{
+		transform:rotate(0deg);
 }
 
 
-@keyframes menu_deroulant {
-	from{
-		left: 500;
-		background:red;
-	}
-	to{
-		left: 300;
-		background: yellow;
-	}
+
 }
 
 .body__card{	
-	&:active{
-		.description{}
+	&:hover{
 		.box__encoche{
-			width:20%;
-			background: $colour-tertiary;}
-		
+			animation-name: anim__box;
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
 		}
+		i{
+			animation-name: anim__encoche;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
 	}
-
+	}
+}
 
 .description
 
@@ -72,7 +90,7 @@ font-weight: 600;
 	border-top-right-radius: 16px;
 	border-bottom-right-radius: 16px;
 	height: 70px;
-	width: 0%;
+	width: 00%;
 	i{
 	overflow: hidden;
 	font-size: 2.5rem;

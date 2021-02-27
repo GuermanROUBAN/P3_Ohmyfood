@@ -1,26 +1,39 @@
-@keyframes apparition_progressive {
-  from {
-    height: 200;
-    background: red;
+@keyframes anim__box {
+  0% {
+    width: 0%;
+    transform: translate(2%, -2%);
   }
-  to {
-    height: 400;
-    background: yellow;
-  }
-}
-@keyframes menu_deroulant {
-  from {
-    left: 500;
-    background: red;
-  }
-  to {
-    left: 300;
-    background: yellow;
+  100% {
+    width: 20%;
   }
 }
-.body__card:active .box__encoche {
-  width: 20%;
-  background: #99E2D0;
+@keyframes anim__encoche {
+  0% {
+    transform: rotate(270deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.body__card:hover .box__encoche {
+  animation-name: anim__box;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.body__card:hover i {
+  animation-name: anim__encoche;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
 
 .description {
