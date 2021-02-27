@@ -1,3 +1,6 @@
+//memo:essayer transform pour le petit coeur.
+
+
 @keyframes apparition_progressive {
 	from{
 		height: 200;
@@ -20,3 +23,57 @@
 		background: yellow;
 	}
 }
+
+.body__card{
+&:active{
+	.description{background: red;}
+	.prix{background: yellow;}
+	.box__encoche{background: blue;}
+}
+}
+
+.description
+
+{	display: flex;
+	flex-direction: column;
+	width:80%;
+	overflow: hidden;
+	white-space: nowrap;
+
+	h3{font-weight: 600;
+		margin:18px 0 5px 12px;
+		overflow: hidden;
+		text-overflow : ellipsis;	
+	}
+	p{
+		margin-left:12px;
+		overflow: hidden;
+		text-overflow : ellipsis;
+	}}
+
+
+.prix
+{display: flex;
+justify-content: center;
+align-items: flex-end;
+width:20%;
+margin-bottom:16px;
+font-weight: 600;
+}
+
+.box__encoche{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: ($colour-tertiary);
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	height: 70px;
+	width: 0%;
+	i{
+	overflow: hidden;
+	font-size: 2.5rem;
+	color:red;}
+}
+
+

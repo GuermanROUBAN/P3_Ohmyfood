@@ -2,14 +2,12 @@
 .main{    
 	display:flex;
 	flex-direction: column;
-  max-width: 375px;
+  	max-width: 375px;
 }
-
 
 .card3__picture3--photo_menu img{
 	@include photo_menu
 }
-
 
 .section__body{
 	position: relative;
