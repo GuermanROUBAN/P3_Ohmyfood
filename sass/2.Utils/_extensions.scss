@@ -24,19 +24,22 @@
 	}
 }
 
-.body__card{
-&:active{
-	.description{background: red;}
-	.prix{background: yellow;}
-	.box__encoche{background: blue;}
-}
-}
+.body__card{	
+	&:active{
+		.description{}
+		.box__encoche{
+			width:20%;
+			background: $colour-tertiary;}
+		
+		}
+	}
+
 
 .description
 
 {	display: flex;
 	flex-direction: column;
-	width:80%;
+	width:100%;
 	overflow: hidden;
 	white-space: nowrap;
 
@@ -73,7 +76,7 @@ font-weight: 600;
 	i{
 	overflow: hidden;
 	font-size: 2.5rem;
-	color:red;}
+	color:white;}
 }
 
 
