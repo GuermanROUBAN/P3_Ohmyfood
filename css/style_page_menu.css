@@ -26,14 +26,14 @@
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 .body__card:hover i {
   animation-name: anim__encoche;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-delay: 0s;
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 .description {
