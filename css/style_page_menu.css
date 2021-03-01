@@ -21,14 +21,14 @@
     transform: rotate(0deg);
   }
 }
-.body__card:hover .box__encoche {
+.card__row:hover .box__encoche {
   animation-name: anim__box;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
-.body__card:hover i {
+.card__row:hover i {
   animation-name: anim__encoche;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -226,7 +226,6 @@ form ::placeholder {
 }
 
 input {
-  background: chartreuse;
   width: 50%;
   height: 50px;
   border: none;
@@ -341,7 +340,8 @@ button--full-width {
 }
 
 .section__footer, .section__footer--adapteed {
-  margin-bottom: 50px;
+  height: 100%;
+  margin-bottom: 20%;
 }
 
 .body__card--entrees h2, .body__card--plats h2, .body__card--desserts h2 {
@@ -353,7 +353,7 @@ button--full-width {
   border-bottom: solid 5px #99E2D0;
 }
 
-.body__card {
+.card__row {
   display: flex;
   width: 90%;
   height: 70px;

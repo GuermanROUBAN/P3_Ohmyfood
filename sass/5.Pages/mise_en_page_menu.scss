@@ -10,7 +10,6 @@
 }
 
 
-
 .section__body{
 	position: relative;
 	margin-top: -40px;
@@ -44,7 +43,8 @@
 }
 .section__footer, .section__footer--adapteed
 {
-	margin-bottom:50px;
+	height: 100%;
+	margin-bottom:20%;
 }
 
 
@@ -52,7 +52,7 @@
 @include block_card_title
 }
 
-.body__card{
+.card__row{
 	display:flex;
 	width: 90%;
 	height: 70px;
