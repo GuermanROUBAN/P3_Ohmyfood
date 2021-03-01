@@ -14,6 +14,7 @@
 	position: relative;
 	margin-top: -40px;
 	height:1100px;
+	height: auto;
 	border-top-left-radius: 45px;
 	border-top-right-radius: 45px;
 	background-color: ($colour-header2);}
@@ -23,6 +24,7 @@
 {	position: relative;
 	margin-top: -40px;
 	height:1190px;
+	height: auto;
 	border-top-left-radius: 45px;
 	border-top-right-radius: 45px;
 	background-color: ($colour-header2);}
@@ -44,11 +46,11 @@
 .section__footer, .section__footer--adapteed
 {
 	height: 100%;
-	margin-bottom:20%;
+	margin:10% 0;
 }
 
 
-.body__card--entrees, .body__card--plats, .body__card--desserts{
+.card__title{
 @include block_card_title
 }
 
@@ -61,6 +63,11 @@
 	border-radius: 16px;
 	background:white;
 }
+
+.card__row:last-child{
+	margin-bottom: 0px;
+}
+
 //.card__title {display: inline-block;width: 70%;background: chartreuse; @include card_menu_title}	
 //	.card__texte{@include card_menu_texte}
 

@@ -321,7 +321,7 @@ button--full-width {
 }
 
 .section2__body {
-  height: 420px;
+  height: 340px;
 }
 
 .section2__head h2 {
@@ -352,6 +352,10 @@ button--full-width {
   color: #9356DC;
 }
 
+.section2__card:last-child {
+  margin-bottom: 0px;
+}
+
 .number {
   background: #9356DC;
   border-radius: 50px;
@@ -375,6 +379,7 @@ button--full-width {
 }
 
 .section3 {
+  height: 1220px;
   background: #F6F6F6;
 }
 .section3 a:visited {

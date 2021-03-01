@@ -33,7 +33,7 @@
 
 .section2__body{
 
-	height: 420px;
+	height: 340px;
 }
 
 .section2__head h2{
@@ -64,6 +64,8 @@
 			  color:($colour-primary)}
 	}
 	
+.section2__card:last-child{
+		margin-bottom: 0px;}
 
 .number{
 	background: ($colour-primary);
@@ -88,6 +90,7 @@
 }
 
 .section3{
+	height: 1220px;
 	background: ($colour-header2);
 	a:visited 
 	{ 
@@ -131,6 +134,7 @@
 	top:30%;
 	left:85%;}
 }
+
 
 
 .coeur{
