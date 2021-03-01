@@ -182,6 +182,10 @@ button {
   font-weight: 900;
 }
 
+.section {
+  background: #F6F6F6;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -308,7 +312,7 @@ button--full-width {
 .section__body {
   position: relative;
   margin-top: -40px;
-  height: 1160px;
+  height: 1100px;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   background-color: #F6F6F6;
@@ -317,7 +321,7 @@ button--full-width {
 .section__body--adapteed {
   position: relative;
   margin-top: -40px;
-  height: 1270px;
+  height: 1190px;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   background-color: #F6F6F6;
@@ -334,6 +338,10 @@ button--full-width {
 .body__title i {
   margin: 38px 0 10px 40px;
   font-size: 2.5rem;
+}
+
+.section__footer, .section__footer--adapteed {
+  margin-bottom: 50px;
 }
 
 .body__card--entrees h2, .body__card--plats h2, .body__card--desserts h2 {
@@ -357,14 +365,12 @@ button--full-width {
 
 .section__footer {
   display: flex;
-  margin-top: 40px;
 }
 .section__footer button {
   margin: auto;
 }
 .section__footer--adapteed {
   display: flex;
-  margin-top: 48px;
 }
 .section__footer--adapteed button {
   margin: auto;

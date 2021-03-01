@@ -182,6 +182,10 @@ button {
   font-weight: 900;
 }
 
+.section {
+  background: #F6F6F6;
+}
+
 header {
   display: flex;
   justify-content: center;
