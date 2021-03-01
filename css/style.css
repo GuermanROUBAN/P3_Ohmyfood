@@ -474,6 +474,62 @@ button--full-width {
   .main {
     max-width: 992px;
   }
+
+  .section1 {
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    background: #F6F6F6;
+  }
+
+  .section2 {
+    display: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    background: chartreuse;
+  }
+
+  .section2__head {
+    display: inherit;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background: red;
+  }
+  .section2__head h2 {
+    display: inherit;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section2__body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    background: orange;
+  }
+
+  .section2__card {
+    display: inherit;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 250px;
+    height: 100%;
+    background: aqua;
+    margin-bottom: 0px;
+  }
+  .section2__card i {
+    display: inherit;
+    display: flex;
+    font-size: 300%;
+    padding: 20px;
+  }
+  .section2__card .icone {
+    font-size: 20px;
+  }
+  .section2__card span {
+    font-size: 2rem;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1440px) {
   .main {
