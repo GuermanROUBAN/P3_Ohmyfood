@@ -1,12 +1,14 @@
-@keyframes boom {
-  0% {
-    opacity: 0;
-    transform: translate(0%, 400%);
-  }
-  80% {
-    opacity: 0;
-  }
+.coeur--plein i {
+  opacity: 0;
 }
+.coeur--plein i:hover {
+  transition-duration: 1s;
+  opacity: 1;
+  background: linear-gradient(180deg, #FF79DA, #FF79DA 10%, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .body__card--entrees {
   animation-name: boom;
   animation-duration: 1.5s;
@@ -56,14 +58,14 @@
 }
 .card__row:hover .box__encoche {
   animation-name: anim__box;
-  animation-duration: 1s;
+  animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 .card__row:hover i {
   animation-name: anim__encoche;
-  animation-duration: 1s;
+  animation-duration: 0.2s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-fill-mode: forwards;
@@ -212,9 +214,11 @@ header img {
   margin: 18px 0 5px 12px;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.1;
 }
 .description p {
-  margin-left: 12px;
+  line-height: 1.1;
+  margin: 3px 0 5px 12px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -224,7 +228,7 @@ header img {
   justify-content: center;
   align-items: flex-end;
   width: 20%;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   font-weight: 600;
 }
 
@@ -235,7 +239,7 @@ header img {
   background-color: #99E2D0;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
-  height: 70px;
+  height: 75px;
   width: 0%;
 }
 .box__encoche i {
@@ -461,15 +465,6 @@ button--full-width {
   position: absolute;
   top: 30%;
   left: 85%;
-}
-
-.coeur--plein {
-  opacity: 0;
-}
-.coeur--plein:hover {
-  transition-duration: 1s;
-  opacity: 1;
-  color: red;
 }
 
 .card3__pub3 {

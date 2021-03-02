@@ -7,13 +7,16 @@
 	overflow: hidden;
 	white-space: nowrap;
 
-	h3{font-weight: 600;
+	h3{
+		font-weight: 600;
 		margin:18px 0 5px 12px;
 		overflow: hidden;
-		text-overflow : ellipsis;	
+		text-overflow : ellipsis;
+		line-height: 1.1;	
 	}
 	p{
-		margin-left:12px;
+		line-height: 1.1;
+		margin:3px 0 5px 12px;
 		overflow: hidden;
 		text-overflow : ellipsis;
 	}}
@@ -24,7 +27,7 @@
 justify-content: center;
 align-items: flex-end;
 width:20%;
-margin-bottom:16px;
+margin-bottom:14px;
 font-weight: 600;
 }
 
@@ -35,7 +38,7 @@ font-weight: 600;
 	background-color: ($colour-tertiary);
 	border-top-right-radius: 16px;
 	border-bottom-right-radius: 16px;
-	height: 70px;
+	height: 75px;
 	width: 00%;
 	i{
 	overflow: hidden;

@@ -109,3 +109,6 @@ span{
     width: 10%;}
 }
 
+@mixin couleur_coeur{
+    background: linear-gradient(180deg,($colour-secondary), ($colour-secondary 10%), ($colour-primary));
+}

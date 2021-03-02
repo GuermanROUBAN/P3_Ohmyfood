@@ -1,14 +1,15 @@
-//memo:essayer transform pour le petit coeur.
-@keyframes boom {
-	0%{
-		opacity:0;
-		transform: translate(0%, 400%);}
-	80%{opacity:0;}
+.coeur  {
+	&--plein i{opacity:0};
+	&--plein i:hover{
+		transition-duration: 1s;
+		opacity:1;
+ @include couleur_coeur;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}}
 
-	100%{
-	
-	}
-}
+
+// Animation d'apparition du menu sur les pages des restaurants
 
 .body__card--entrees{
 	animation-name: boom;
@@ -34,16 +35,7 @@ animation-timing-function: ease-in-out;
 animation-delay: 0s;
 animation-fill-mode: forwards;}
 
-
-
-
-
-
-
-
-//////////////////////////////////////////////////////////
-
-
+// Animation de la selection du plat avec coulissement transversal et encoche verte sur les pages des restaurants
 
 @keyframes anim__box {
 	0%{
@@ -80,14 +72,14 @@ animation-fill-mode: forwards;}
 	&:hover{
 		.box__encoche{
 			animation-name: anim__box;
-			animation-duration: 1s;
+			animation-duration: 0.2s;
 			animation-timing-function: ease-in-out;
 			animation-delay: 0s;
 			animation-fill-mode: forwards;
 		}
 		i{
 			animation-name: anim__encoche;
-			animation-duration: 1s;
+			animation-duration: 0.2s;
 			animation-timing-function: linear;
 			animation-delay: 0s;
 			animation-fill-mode: forwards;
