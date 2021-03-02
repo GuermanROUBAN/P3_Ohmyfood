@@ -1,11 +1,3 @@
-.body__card--entrees, .body__card--plats, .body__card--desserts {
-  animation-name: boom;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes boom {
   0% {
     opacity: 0;
@@ -15,6 +7,30 @@
     opacity: 0;
   }
 }
+.body__card--entrees {
+  animation-name: boom;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.body__card--plats {
+  animation-name: boom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.body__card--desserts {
+  animation-name: boom;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes anim__box {
   0% {
     width: 0%;
