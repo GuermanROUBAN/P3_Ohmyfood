@@ -9,6 +9,12 @@
 	@include photo_menu
 }
 
+.coeur{
+	display:flex;
+	i{position:absolute;
+		top:0%;
+		left:70%}
+}
 
 .section__body{
 	position: relative;

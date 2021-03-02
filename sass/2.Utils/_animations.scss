@@ -8,8 +8,18 @@
 -webkit-text-fill-color: transparent;
 }}
 
-
 // Animation d'apparition du menu sur les pages des restaurants
+
+@keyframes boom {
+	0%{
+		opacity:0;
+		transform: translate(0%, 200%);}
+	80%{opacity:0;}
+
+	100%{
+	
+	}
+}
 
 .body__card--entrees{
 	animation-name: boom;

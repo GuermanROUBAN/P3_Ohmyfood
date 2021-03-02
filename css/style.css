@@ -9,6 +9,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+@keyframes boom {
+  0% {
+    opacity: 0;
+    transform: translate(0%, 200%);
+  }
+  80% {
+    opacity: 0;
+  }
+}
 .body__card--entrees {
   animation-name: boom;
   animation-duration: 1.5s;

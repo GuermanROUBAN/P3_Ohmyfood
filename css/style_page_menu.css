@@ -9,6 +9,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+@keyframes boom {
+  0% {
+    opacity: 0;
+    transform: translate(0%, 200%);
+  }
+  80% {
+    opacity: 0;
+  }
+}
 .body__card--entrees {
   animation-name: boom;
   animation-duration: 1.5s;
@@ -343,6 +352,15 @@ button--full-width {
   object-fit: cover;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
+}
+
+.coeur {
+  display: flex;
+}
+.coeur i {
+  position: absolute;
+  top: 0%;
+  left: 70%;
 }
 
 .section__body {
