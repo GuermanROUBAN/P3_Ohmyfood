@@ -92,7 +92,7 @@
 .section3{
 	height: 1220px;
 	background: ($colour-header2);
-	a:visited 
+	a
 	{ 
 	 color :black
 	} 
@@ -154,11 +154,12 @@
 }
 
 
-@media screen and (min-width: 667px) and (max-width:992px)
+@media screen and (min-width: 667px) 
 
 {
 	.main{    
-	  max-width: 992px;
+	  max-width: 1480px;
+	  margin:auto;
 	}
 
 	.section1{
@@ -172,8 +173,6 @@
 	display: inherit;
 	display:flex;
 	flex-wrap: wrap;
-
-	background: chartreuse;
 		}	
 	
 	.section2__head{
@@ -188,21 +187,25 @@
 		}
 	}
 
+	button {
+		width: 30%;
+  }
+
 	.section2__body
 	{
 	display: flex;
 	flex-direction: row;
 	width:100%;
 	align-items: center;
-	background: orange;
+
 	}
 	.section2__card{
 		display: inherit;
 		flex-direction: column;
 		box-sizing: border-box;
-		width:250px;
-		height: 100%;
-		background: aqua;
+		width: 30%;
+		height: 80%;
+		
 		margin-bottom:0px;
 		
 		i{
@@ -220,22 +223,26 @@
 		}
 	}
 
-
-}
-
-
-@media screen and (min-width: 992px) and (max-width:1440px)
-
-{
-	.main{    
-	  max-width: 1440px;
+.section3{
+	margin-top: 40px;
+	height: 800px;
+	&__head{
+		text-align: center;
+	}
+	&__body{
+		display:flex;
+		flex-wrap: wrap;
+		a {
+		width:50%;
+		}
 	}
 }
-
-@media screen and (min-width: 1140px)
-{
-	.main{    
-	  max-width: 2240px;
+	footer{
+		text-align: center;
+		.body__row{justify-content: center;}}
+	
+	.body__row i{
+		width:4%;
 	}
-}
+	}
 

@@ -428,7 +428,7 @@ button--full-width {
   height: 1220px;
   background: #F6F6F6;
 }
-.section3 a:visited {
+.section3 a {
   color: black;
 }
 
@@ -490,9 +490,10 @@ button--full-width {
     max-width: 667px;
   }
 }
-@media screen and (min-width: 667px) and (max-width: 992px) {
+@media screen and (min-width: 667px) {
   .main {
-    max-width: 992px;
+    max-width: 1480px;
+    margin: auto;
   }
 
   .section1 {
@@ -506,7 +507,6 @@ button--full-width {
     display: inherit;
     display: flex;
     flex-wrap: wrap;
-    background: chartreuse;
   }
 
   .section2__head {
@@ -520,21 +520,23 @@ button--full-width {
     justify-content: center;
   }
 
+  button {
+    width: 30%;
+  }
+
   .section2__body {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-    background: orange;
   }
 
   .section2__card {
     display: inherit;
     flex-direction: column;
     box-sizing: border-box;
-    width: 250px;
-    height: 100%;
-    background: aqua;
+    width: 30%;
+    height: 80%;
     margin-bottom: 0px;
   }
   .section2__card i {
@@ -549,15 +551,31 @@ button--full-width {
   .section2__card span {
     font-size: 2rem;
   }
-}
-@media screen and (min-width: 992px) and (max-width: 1440px) {
-  .main {
-    max-width: 1440px;
+
+  .section3 {
+    margin-top: 40px;
+    height: 800px;
   }
-}
-@media screen and (min-width: 1140px) {
-  .main {
-    max-width: 2240px;
+  .section3__head {
+    text-align: center;
+  }
+  .section3__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section3__body a {
+    width: 50%;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer .body__row {
+    justify-content: center;
+  }
+
+  .body__row i {
+    width: 4%;
   }
 }
 
