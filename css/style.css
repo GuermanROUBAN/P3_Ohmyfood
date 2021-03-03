@@ -355,7 +355,7 @@ button--full-width {
 }
 
 .section1 h2 {
-  margin: 40px 0 26px 0px;
+  margin: 40px 0 26px 20px;
   font-size: 2.4rem;
   font-weight: 900;
   font-weight: bold;
@@ -367,7 +367,7 @@ button--full-width {
 }
 
 .section2__body {
-  height: 340px;
+  height: 300px;
 }
 
 .section2__head h2 {
@@ -396,6 +396,10 @@ button--full-width {
 }
 .section2__card:hover i {
   color: #9356DC;
+}
+
+.section2__card span {
+  text-align: center;
 }
 
 .section2__card:last-child {

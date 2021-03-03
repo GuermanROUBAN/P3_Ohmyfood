@@ -13,7 +13,7 @@
 	display:flex;
 	i{position:absolute;
 		top:0%;
-		left:70%}
+		left:75%}
 }
 
 .section__body{
@@ -114,7 +114,14 @@
 	margin:auto;
 }
 button {
-	width: 40%;
+	width: 60%;
 }
 
+footer{
+	text-align: center;
+	.body__row{justify-content: center;}}
+
+.body__row i{
+	width:4%;
+}
 }
