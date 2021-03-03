@@ -17,12 +17,8 @@
 
 
 .section1 h2{
-	
 	margin: 40px 0 26px 0px;
-	font-size: 2.8rem;
-	font-weight: 900;
-	font-weight: bold;
-
+	@include titres_styles
 }
 
 .section1 p{
@@ -37,11 +33,8 @@
 }
 
 .section2__head h2{
-	width:50%;
-	font-weight: 900;
-	font-size: 2.5rem;
-	margin:52px 0 34px 22px;
-	
+	margin: 40px 0 26px 20px;
+	@include titres_styles
 }
 
 .section2__card
@@ -98,11 +91,9 @@
 	} 
 }
 
-.section3__head{
+.section3__head h2{
 	margin: 40px 0 26px 20px;
-	font-size: 2.8rem;
-	font-weight: 900;
-	font-weight: bold;}
+	@include titres_styles}
 
 .section3__card3{
 	display:flex;
@@ -135,14 +126,15 @@
 	left:85%;}
 }
 
-
+// etiquette "Nouveau"
 .card3__pub3{
 	position:absolute;
 	top:10%;
-	left:75%;
+	left:70%;
 	background:($colour-tertiary);
 	color:($colour-texte);
-	padding: 5px 5px;
+	padding: 5px 8px;
+	border-radius: 8%;
 }
 
 @media screen and (min-width: 376px) and (max-width:667px)
@@ -169,22 +161,9 @@
 	text-align: center;
 	background: ($colour-header2);}
 
-	.section2{
-	display: inherit;
-	display:flex;
-	flex-wrap: wrap;
-		}	
 	
 	.section2__head{
-	display: inherit;
-	width:100%;
-	padding:10px 0 10px 0;
-		h2{
-			display: inherit;
-			width:100%;
-			justify-content: center;
-			
-		}
+		text-align: center;
 	}
 
 	button {
@@ -224,7 +203,7 @@
 	}
 
 .section3{
-	margin-top: 40px;
+
 	height: 800px;
 	&__head{
 		text-align: center;
@@ -237,6 +216,7 @@
 		}
 	}
 }
+
 	footer{
 		text-align: center;
 		.body__row{justify-content: center;}}

@@ -356,7 +356,7 @@ button--full-width {
 
 .section1 h2 {
   margin: 40px 0 26px 0px;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 900;
   font-weight: bold;
 }
@@ -371,10 +371,10 @@ button--full-width {
 }
 
 .section2__head h2 {
-  width: 50%;
+  margin: 40px 0 26px 20px;
+  font-size: 2.4rem;
   font-weight: 900;
-  font-size: 2.5rem;
-  margin: 52px 0 34px 22px;
+  font-weight: bold;
 }
 
 .section2__card {
@@ -432,9 +432,9 @@ button--full-width {
   color: black;
 }
 
-.section3__head {
+.section3__head h2 {
   margin: 40px 0 26px 20px;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 900;
   font-weight: bold;
 }
@@ -479,10 +479,11 @@ button--full-width {
 .card3__pub3 {
   position: absolute;
   top: 10%;
-  left: 75%;
+  left: 70%;
   background: #99E2D0;
   color: #008782;
-  padding: 5px 5px;
+  padding: 5px 8px;
+  border-radius: 8%;
 }
 
 @media screen and (min-width: 376px) and (max-width: 667px) {
@@ -503,21 +504,8 @@ button--full-width {
     background: #F6F6F6;
   }
 
-  .section2 {
-    display: inherit;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .section2__head {
-    display: inherit;
-    width: 100%;
-    padding: 10px 0 10px 0;
-  }
-  .section2__head h2 {
-    display: inherit;
-    width: 100%;
-    justify-content: center;
+    text-align: center;
   }
 
   button {
@@ -553,7 +541,6 @@ button--full-width {
   }
 
   .section3 {
-    margin-top: 40px;
     height: 800px;
   }
   .section3__head {
