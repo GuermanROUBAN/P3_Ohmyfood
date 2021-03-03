@@ -332,8 +332,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #9356DC;
-  color: #F5EDFF;
+  opacity: 0.8;
 }
 button--full-width {
   width: 100%;

@@ -332,8 +332,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #9356DC;
-  color: #F5EDFF;
+  opacity: 0.8;
 }
 button--full-width {
   width: 100%;
@@ -418,6 +417,7 @@ button--full-width {
   margin-bottom: 15px;
   border-radius: 16px;
   background: white;
+  box-shadow: gainsboro 3px 3px 10px;
 }
 
 .card__row:last-child {
