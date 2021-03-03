@@ -96,26 +96,25 @@
 }
 
 
-@media screen and (min-width: 667px) and (max-width:992px)
-
+@media screen and (min-width: 667px)
 {
 	.main{    
-	  max-width: 992px;
-	}	
+	  max-width: 1480px;
+	}
+	.body__title{
+	justify-content: center;
+	}
+
+	.card__title{
+	text-align: center;
+	font-size: 1.8rem;
+	}
+	.body__card--entrees,.body__card--plats, .body__card--desserts{
+	width: 80%;
+	margin:auto;
+}
+button {
+	width: 40%;
 }
 
-
-@media screen and (min-width: 992px) and (max-width:1440px)
-
-{
-	.main{    
-	  max-width: 1440px;
-	}
-}
-
-@media screen and (min-width: 1140px)
-{
-	.main{    
-	  max-width: 2240px;
-	}
 }
