@@ -1,7 +1,7 @@
 .loader {
   animation-name: loader;
   animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-out;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
@@ -12,9 +12,10 @@
   }
   100% {
     opacity: 0;
+    z-index: 1;
   }
 }
-.loader h2 {
+.balle {
   animation-name: atable;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
@@ -25,9 +26,26 @@
 @-webkit-keyframes atable {
   0% {
     -webkit-transform: translateY(0) rotateX(0deg);
+    background: #ed8b64;
+    top: 0%;
+    left: 0%;
+  }
+  50% {
+    -webkit-transform: translateX(50) translateY(0) rotateX(0deg);
+    background: #ed8b64;
+    left: 50%;
+    top: 33%;
+    width: 70px;
+    height: 70px;
   }
   100% {
-    -webkit-transform: translateY(40px) rotateX(40deg);
+    -webkit-transform: translateX(0) translateY(0px) rotateX(360deg);
+    background: #00ff88;
+    border-radius: 0%;
+    width: 70px;
+    height: 70px;
+    left: 78%;
+    font-size: 2rem;
   }
 }
 .coeur--plein i {
