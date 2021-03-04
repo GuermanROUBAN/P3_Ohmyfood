@@ -83,6 +83,15 @@
   animation-fill-mode: forwards;
 }
 
+@keyframes boom {
+  0% {
+    opacity: 0;
+    transform: translate(0%, -200%);
+  }
+  80% {
+    opacity: 0;
+  }
+}
 @keyframes anim__box {
   0% {
     width: 0%;
@@ -486,6 +495,7 @@ button--full-width {
 @media screen and (min-width: 667px) {
   .main {
     max-width: 1480px;
+    margin: auto;
   }
 
   .body__title {

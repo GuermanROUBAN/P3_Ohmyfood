@@ -95,6 +95,16 @@ animation-timing-function: ease-in-out;
 animation-delay: 0s;
 animation-fill-mode: forwards;}
 
+@keyframes boom {
+	0%{
+		opacity:0;
+		transform: translate(0%,-200%);}
+	80%{opacity:0;}
+
+	100%{
+	
+	}
+}
 // Animation de la selection du plat avec coulissement transversal et encoche verte sur les pages des restaurants
 
 @keyframes anim__box {
