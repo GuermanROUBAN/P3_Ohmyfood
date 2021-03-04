@@ -2,7 +2,7 @@
 	animation-name: loader;
 	animation-duration: 3s;
 	animation-timing-function: ease-out;
-	animation-delay: 1s;
+	animation-delay: 1.5s;
 	animation-fill-mode: forwards;
 	}
 
@@ -20,7 +20,7 @@
 
 .balle{
 	animation-name: atable;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-timing-function: ease-in-out;
 	animation-delay: 0s;
 	animation-fill-mode: forwards;
@@ -28,16 +28,16 @@
 	@-webkit-keyframes atable {
 		0% {
 		  -webkit-transform: translateY(0) rotateX(0deg);
-			background: rgb(237, 139, 100);
+			background:($colour-secondary);
 			top:0%;
 			left:0%
 		}
 	 
 		50% {
 			-webkit-transform: translateX(50) translateY(0) rotateX(0deg);
-			 background: rgb(237, 139, 100);
+			 background: ($colour-primary);
 			 left:50%;
-			 top:33%;
+			 top:30%;
 			 width:70px;
 			height: 70px;
 		 }
@@ -45,7 +45,7 @@
 		
 		100% {
 		  -webkit-transform: translateX(0) translateY(0px) rotateX(360deg);
-		  background: rgb(0, 255, 136);
+		  background:($colour-tertiary);
 			border-radius: 0%;
 			width:70px;
 			height: 70px;
