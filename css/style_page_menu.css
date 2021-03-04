@@ -1,3 +1,35 @@
+.loader {
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loader h2 {
+  animation-name: atable;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes atable {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(40px) rotateX(40deg);
+  }
+}
 .coeur--plein i {
   opacity: 0;
 }
@@ -9,15 +41,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-@keyframes boom {
-  0% {
-    opacity: 0;
-    transform: translate(0%, 200%);
-  }
-  80% {
-    opacity: 0;
-  }
-}
 .body__card--entrees {
   animation-name: boom;
   animation-duration: 1.5s;
