@@ -18,7 +18,7 @@
 .balle {
   animation-name: atable;
   animation-duration: 2s;
-  animation-timing-function: easy-in;
+  animation-timing-function: ease-in;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }

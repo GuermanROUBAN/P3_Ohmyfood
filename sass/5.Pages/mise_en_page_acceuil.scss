@@ -1,3 +1,16 @@
+@-moz-document url-prefix() {
+	.balle {
+		position: absolute;
+		text-align: center;
+		align-items: center;
+		display:flex;
+		border-radius: 50%;
+		width:100px;
+		height: 100px;
+	}
+}
+
+
 .loader{
 	display: flex;
 	width:100%;
