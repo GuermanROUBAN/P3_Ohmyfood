@@ -1,3 +1,5 @@
+// mise en page du loader
+
 @-moz-document url-prefix() {
 	.balle {
 		position: absolute;
@@ -31,6 +33,7 @@
 	height: 100px;
 	
 }
+ // mise en page de la page d'acceuil
 
 .main{    
 	display:flex;
@@ -39,6 +42,8 @@
 	z-index: 2;
 	position: relative;
 }
+
+// Haut de page
 
 .section1{
 	min-height: 370px;
@@ -60,6 +65,8 @@
 	margin-bottom: 34px;
 
 }
+
+ // FONCTIONNEMENT
 
 .section2__body{
 
@@ -119,6 +126,8 @@
 	align-items: center;
 }
 
+ // RESTAURANT
+
 .section3{
 	height: 1220px;
 	background: ($colour-header2);
@@ -173,6 +182,9 @@
 	padding: 5px 8px;
 	border-radius: 8%;
 }
+
+
+ // Partie Responsive
 
 @media screen and (min-width: 376px) and (max-width:667px)
 

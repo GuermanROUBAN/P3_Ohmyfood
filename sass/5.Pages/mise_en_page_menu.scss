@@ -16,6 +16,9 @@
 		left:75%}
 }
 
+
+// Milieu de page
+
 .section__body{
 	position: relative;
 	margin-top: -40px;
@@ -56,6 +59,7 @@
 }
 
 
+
 .card__title{
 @include block_card_title
 }
@@ -75,10 +79,6 @@
 	margin-bottom: 0px;
 }
 
-//.card__title {display: inline-block;width: 70%;background: chartreuse; @include card_menu_title}	
-//	.card__texte{@include card_menu_texte}
-
-
 .section__footer{
 	display:flex;
 	
@@ -88,6 +88,9 @@
 	button{margin:auto};
 	}
 }
+
+ // Partie Responsive
+
 @media screen and (min-width: 376px) and (max-width:667px)
 
 {
