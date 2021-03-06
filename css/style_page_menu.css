@@ -86,7 +86,7 @@
 @keyframes boom {
   0% {
     opacity: 0;
-    transform: translate(0%, 200%);
+    -webkit-transform: translate(0%, 200%);
   }
   80% {
     opacity: 0;
