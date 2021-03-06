@@ -18,7 +18,7 @@
 .balle {
   animation-name: atable;
   animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: easy-in;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
@@ -103,12 +103,15 @@
 }
 @keyframes anim__encoche {
   0% {
-    transform: rotate(270deg);
+    transform: rotate(360deg);
   }
   25% {
-    transform: rotate(180deg);
+    transform: rotate(270deg);
   }
   50% {
+    transform: rotate(180deg);
+  }
+  75% {
     transform: rotate(90deg);
   }
   100% {
@@ -124,7 +127,7 @@
 }
 .card__row:hover i {
   animation-name: anim__encoche;
-  animation-duration: 0.2s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-fill-mode: forwards;
@@ -383,6 +386,7 @@ button {
 }
 button:hover {
   opacity: 0.8;
+  box-shadow: black 3px 3px 10px;
 }
 button--full-width {
   width: 100%;
