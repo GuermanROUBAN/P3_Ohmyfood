@@ -1,10 +1,49 @@
+// mise en page du loader
+
+@-moz-document url-prefix() {
+	.balle {
+		position: absolute;
+		text-align: center;
+		align-items: center;
+		display:flex;
+		border-radius: 50%;
+		width:100px;
+		height: 100px;
+	}
+}
+
+
+.loader{
+	display: flex;
+	width:100%;
+	height: 200vh;
+	position:absolute;
+	font-size: 2.8rem;
+	z-index:3;
+	background: whitesmoke;
+}
+
+.balle{
+	position: absolute;
+	text-align: center;
+	align-items: center;
+	display:flex;
+	border-radius: 50%;
+	width:100px;
+	height: 100px;
+	
+}
+ // mise en page de la page d'acceuil
 
 .main{    
 	display:flex;
 	flex-direction: column;
   	max-width: 375px;
-
+	z-index: 2;
+	position: relative;
 }
+
+// Haut de page
 
 .section1{
 	min-height: 370px;
@@ -17,12 +56,8 @@
 
 
 .section1 h2{
-	
-	margin: 40px 0 26px 0px;
-	font-size: 2.8rem;
-	font-weight: 900;
-	font-weight: bold;
-
+	margin: 40px 0 26px 20px;
+	@include titres_styles
 }
 
 .section1 p{
@@ -31,17 +66,16 @@
 
 }
 
+ // FONCTIONNEMENT
+
 .section2__body{
 
-	height: 420px;
+	height: 300px;
 }
 
 .section2__head h2{
-	width:50%;
-	font-weight: 900;
-	font-size: 2.5rem;
-	margin:52px 0 34px 22px;
-	
+	margin: 40px 0 26px 20px;
+	@include titres_styles
 }
 
 .section2__card
@@ -64,6 +98,11 @@
 			  color:($colour-primary)}
 	}
 	
+	.section2__card span{text-align: center;}
+
+
+.section2__card:last-child{
+		margin-bottom: 0px;}
 
 .number{
 	background: ($colour-primary);
@@ -87,19 +126,20 @@
 	align-items: center;
 }
 
+ // RESTAURANT
+
 .section3{
+	height: 1220px;
 	background: ($colour-header2);
-	a:visited 
+	a
 	{ 
 	 color :black
 	} 
 }
 
-.section3__head{
+.section3__head h2{
 	margin: 40px 0 26px 20px;
-	font-size: 2.8rem;
-	font-weight: 900;
-	font-weight: bold;}
+	@include titres_styles}
 
 .section3__card3{
 	display:flex;
@@ -108,6 +148,7 @@
 	margin:auto;
 	position:relative;
 }
+
 
 .card3__picture3 img{
 	@include photo_acceuil
@@ -131,55 +172,107 @@
 	left:85%;}
 }
 
-
-.coeur{
-	&--plein{opacity:0};
-	&--plein:active{
-		opacity:1;
-		color:red};}
-
+// etiquette "Nouveau"
 .card3__pub3{
 	position:absolute;
 	top:10%;
-	left:75%;
+	left:70%;
 	background:($colour-tertiary);
 	color:($colour-texte);
-	padding: 5px 5px;
+	padding: 5px 8px;
+	border-radius: 8%;
 }
+
+
+ // Partie Responsive
 
 @media screen and (min-width: 376px) and (max-width:667px)
 
 {
 	.main{    
-	  background:blue;
 	  max-width: 667px;
-	}	
-}
-
-
-@media screen and (min-width: 667px) and (max-width:992px)
-
-{
-	.main{    
-	  background:green;
-	  max-width: 992px;
-	}	
-}
-
-
-@media screen and (min-width: 992px) and (max-width:1440px)
-
-{
-	.main{    
-	  background:coral;
-	  max-width: 1440px;
 	}
 }
 
-@media screen and (min-width: 1140px)
+
+@media screen and (min-width: 667px) 
+
 {
 	.main{    
-	  background:darkblue;
-	  max-width: 2240px;
+	  max-width: 1480px;
+	  margin:auto;
+	}
+
+	.section1{
+
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	background: ($colour-header2);}
+
+
+	.section2__head{
+	
+		text-align: center;
+	}
+
+	button {
+		width: 30%;
+  }
+
+	.section2__body
+	{
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	align-items: center;
+
+	}
+	.section2__card{
+		display: inherit;
+		flex-direction: column;
+		box-sizing: border-box;
+		width: 30%;
+		height: 80%;
+		
+		margin-bottom:0px;
+		
+		i{
+			display: inherit;
+			display:flex;
+			font-size: 300%;
+			padding:20px;
+		
+		}
+		.icone{
+			font-size: 20px;
+		}
+		span{
+			font-size: 2rem;
+		}
+	}
+
+.section3{
+
+	height: 800px;
+	&__head{
+		text-align: center;
+	}
+	&__body{
+		display:flex;
+		flex-wrap: wrap;
+		a {
+		width:50%;
+		}
 	}
 }
+
+	footer{
+		text-align: center;
+		.body__row{justify-content: center;}}
+	
+	.body__row i{
+		width:4%;
+	}
+	}
+

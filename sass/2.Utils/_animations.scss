@@ -1,0 +1,198 @@
+// Animation du loader
+
+.loader {
+	animation-name: loader;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;     
+  }
+  100% {
+    
+	 opacity: 0;
+	 z-index: 1;
+	 
+  }
+}
+
+.balle{
+	animation-name: atable;
+	-moz-animation: atable;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	}
+	@-webkit-keyframes atable {
+		0% {
+		  -webkit-transform: translateY(0) rotateX(0deg);
+			background:($colour-secondary);
+			top:0%;
+			left:0%
+		}
+	 
+		50% {
+			-webkit-transform: translateX(50) translateY(0) rotateX(0deg);
+			 background: ($colour-primary);
+			 left:50%;
+			 top:30%;
+			 width:70px;
+			height: 70px;
+		 }
+	  
+		
+		100% {
+		  -webkit-transform: translateX(0) translateY(0px) rotateX(360deg);
+		  background:($colour-tertiary);
+		  border-radius: 0%; 
+
+			width:70px;
+			height: 70px;
+		  left:78%;
+		 font-size: 2rem;
+		}
+	 }
+
+	 @-moz-keyframes atable{
+
+	 0% {
+		-webkit-transform: translateY(0) rotateX(0deg);
+		 background:($colour-secondary);
+		 top:0%;
+		 left:0%
+	 }
+  
+	 50% {
+		 -webkit-transform: translateX(50) translateY(0) rotateX(0deg);
+		  background: ($colour-primary);
+		  left:50%;
+		  top:30%;
+		  width:70px;
+		 height: 70px;
+	  }
+	
+	 
+	 100% {
+		-webkit-transform: translateX(0) translateY(0px) rotateX(360deg);
+		background:($colour-tertiary);
+		border-radius: 0%; 
+
+		 width:70px;
+		 height: 70px;
+		left:78%;
+	  font-size: 2rem;
+	 }
+	}
+
+// Animation du coeur
+
+.coeur  {
+	&--plein i{opacity:0};
+	&--plein i:hover{
+		transition-duration: 1s;
+		opacity:1;
+ @include couleur_coeur;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}}
+
+// Animation d'apparition du menu sur les pages des restaurants
+
+
+.body__card--entrees{
+	animation-name: boom;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+	}
+
+.body__card--plats{
+
+animation-name: boom;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-fill-mode: forwards;
+}
+
+.body__card--desserts{
+animation-name: boom;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-fill-mode: forwards;}
+
+@keyframes boom {
+	0%{
+		opacity:0;
+		-webkit-transform: translate(0%, 200%);}
+	80%{opacity:0;}
+
+	100%{
+	
+	}
+}
+// Animation de la selection du plat avec coulissement transversal et encoche verte sur les pages des restaurants
+
+@keyframes anim__box {
+	0%{
+		width: 0%;
+		transform: translate(2%,-2%);
+	}
+	100%{
+		width: 20%;
+}
+}
+
+@keyframes anim__encoche {
+	0%{
+		transform:rotate(360deg);
+	}
+
+	25%{
+		transform:rotate(270deg);	
+	}
+
+
+	50%{
+		transform:rotate(180deg);	
+	}
+
+
+	75%{
+		transform:rotate(90deg);
+	}
+
+
+	100%{
+		transform:rotate(0deg);
+}
+
+}
+
+.card__row{	
+	&:hover{
+		.box__encoche{
+			animation-name: anim__box;
+			animation-duration: 0.2s;
+			animation-timing-function: ease-in-out;
+			animation-delay: 0s;
+			animation-fill-mode: forwards;
+		}
+		i{
+			animation-name: anim__encoche;
+			animation-duration: 0.3s;
+			animation-timing-function: linear;
+			animation-delay: 0s;
+			animation-fill-mode: forwards;
+	}
+	}
+}
+
+

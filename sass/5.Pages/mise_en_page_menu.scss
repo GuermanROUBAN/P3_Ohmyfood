@@ -2,27 +2,38 @@
 .main{    
 	display:flex;
 	flex-direction: column;
-  max-width: 375px;
+  	max-width: 375px;
 }
-
 
 .card3__picture3--photo_menu img{
 	@include photo_menu
 }
 
+.coeur{
+	display:flex;
+	i{position:absolute;
+		top:0%;
+		left:75%}
+}
+
+
+// Milieu de page
 
 .section__body{
 	position: relative;
 	margin-top: -40px;
-	height:1160px;
+	height:1100px;
+	height: auto;
 	border-top-left-radius: 45px;
 	border-top-right-radius: 45px;
 	background-color: ($colour-header2);}
+
 	
 .section__body--adapteed
 {	position: relative;
 	margin-top: -40px;
-	height:1270px;
+	height:1190px;
+	height: auto;
 	border-top-left-radius: 45px;
 	border-top-right-radius: 45px;
 	background-color: ($colour-header2);}
@@ -41,66 +52,81 @@
 	}
 	
 }
+.section__footer, .section__footer--adapteed
+{
+	height: 100%;
+	margin:10% 0;
+}
 
 
 
-.body__card--entrees, .body__card--plats, .body__card--desserts{
+.card__title{
 @include block_card_title
 }
 
-.body__card{
-@include card_menu
+.card__row{
+	display:flex;
+	width: 90%;
+	height: 75px;
+	margin: auto;
+	margin-bottom: 15px;
+	border-radius: 16px;
+	background:white;
+	box-shadow: gainsboro 3px 3px 10px;
 }
-.card__title
-{
-@include card_menu_title
-}	
-.card__texte{
-@include card_menu_texte
+
+.card__row:last-child{
+	margin-bottom: 0px;
 }
+
 .section__footer{
 	display:flex;
-	margin-top: 40px;
+	
 	button{margin:auto};
 	&--adapteed{
 	display:flex;
-	margin-top:48px ;
 	button{margin:auto};
 	}
 }
+
+ // Partie Responsive
+
 @media screen and (min-width: 376px) and (max-width:667px)
 
 {
 	.main{    
-	  background:blue;
 	  max-width: 667px;
 	}	
 }
 
 
-@media screen and (min-width: 667px) and (max-width:992px)
-
+@media screen and (min-width: 667px)
 {
 	.main{    
-	  background:green;
-	  max-width: 992px;
-	}	
+	  max-width: 1480px;
+	  margin:auto;
+	}
+	.body__title{
+	justify-content: center;
+	}
+
+	.card__title{
+	text-align: center;
+	font-size: 1.8rem;
+	}
+	.body__card--entrees,.body__card--plats, .body__card--desserts{
+	width: 80%;
+	margin:auto;
+}
+button {
+	width: 60%;
 }
 
+footer{
+	text-align: center;
+	.body__row{justify-content: center;}}
 
-@media screen and (min-width: 992px) and (max-width:1440px)
-
-{
-	.main{    
-	  background:coral;
-	  max-width: 1440px;
-	}
+.body__row i{
+	width:4%;
 }
-
-@media screen and (min-width: 1140px)
-{
-	.main{    
-	  background:darkblue;
-	  max-width: 2240px;
-	}
 }

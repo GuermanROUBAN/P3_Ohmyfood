@@ -1,3 +1,164 @@
+.loader {
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+.balle {
+  animation-name: atable;
+  -moz-animation: atable;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes atable {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0deg);
+    background: #FF79DA;
+    top: 0%;
+    left: 0%;
+  }
+  50% {
+    -webkit-transform: translateX(50) translateY(0) rotateX(0deg);
+    background: #9356DC;
+    left: 50%;
+    top: 30%;
+    width: 70px;
+    height: 70px;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0px) rotateX(360deg);
+    background: #99E2D0;
+    border-radius: 0%;
+    width: 70px;
+    height: 70px;
+    left: 78%;
+    font-size: 2rem;
+  }
+}
+@-moz-keyframes atable {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0deg);
+    background: #FF79DA;
+    top: 0%;
+    left: 0%;
+  }
+  50% {
+    -webkit-transform: translateX(50) translateY(0) rotateX(0deg);
+    background: #9356DC;
+    left: 50%;
+    top: 30%;
+    width: 70px;
+    height: 70px;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0px) rotateX(360deg);
+    background: #99E2D0;
+    border-radius: 0%;
+    width: 70px;
+    height: 70px;
+    left: 78%;
+    font-size: 2rem;
+  }
+}
+.coeur--plein i {
+  opacity: 0;
+}
+.coeur--plein i:hover {
+  transition-duration: 1s;
+  opacity: 1;
+  background: linear-gradient(180deg, #FF79DA, #FF79DA 10%, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.body__card--entrees {
+  animation-name: boom;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.body__card--plats {
+  animation-name: boom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.body__card--desserts {
+  animation-name: boom;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0%, 200%);
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@keyframes anim__box {
+  0% {
+    width: 0%;
+    transform: translate(2%, -2%);
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes anim__encoche {
+  0% {
+    transform: rotate(360deg);
+  }
+  25% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.card__row:hover .box__encoche {
+  animation-name: anim__box;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+.card__row:hover i {
+  animation-name: anim__encoche;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -100,6 +261,10 @@ button {
   font-weight: 900;
 }
 
+.section {
+  background: #F6F6F6;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -125,6 +290,52 @@ header img {
   display: flex;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.description h3 {
+  font-weight: 600;
+  margin: 18px 0 5px 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1;
+}
+.description p {
+  line-height: 1.1;
+  margin: 3px 0 5px 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prix {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 20%;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.box__encoche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  height: 75px;
+  width: 0%;
+}
+.box__encoche i {
+  overflow: hidden;
+  font-size: 2.5rem;
+  color: white;
+}
+
 form {
   display: flex;
   width: 100%;
@@ -140,7 +351,6 @@ form ::placeholder {
 }
 
 input {
-  background: chartreuse;
   width: 50%;
   height: 50px;
   border: none;
@@ -201,8 +411,8 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #9356DC;
-  color: #F5EDFF;
+  opacity: 0.8;
+  box-shadow: black 3px 3px 10px;
 }
 button--full-width {
   width: 100%;
@@ -223,10 +433,20 @@ button--full-width {
   border-top-left-radius: 16px;
 }
 
+.coeur {
+  display: flex;
+}
+.coeur i {
+  position: absolute;
+  top: 0%;
+  left: 75%;
+}
+
 .section__body {
   position: relative;
   margin-top: -40px;
-  height: 1160px;
+  height: 1100px;
+  height: auto;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   background-color: #F6F6F6;
@@ -235,7 +455,8 @@ button--full-width {
 .section__body--adapteed {
   position: relative;
   margin-top: -40px;
-  height: 1270px;
+  height: 1190px;
+  height: auto;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   background-color: #F6F6F6;
@@ -254,58 +475,43 @@ button--full-width {
   font-size: 2.5rem;
 }
 
-.body__card--entrees h2, .body__card--plats h2, .body__card--desserts h2 {
+.section__footer, .section__footer--adapteed {
+  height: 100%;
+  margin: 10% 0;
+}
+
+.card__title h2 {
   display: inline-block;
   margin: 30px 0 25px 20px;
   padding-right: 5px;
 }
-.body__card--entrees .greenline, .body__card--plats .greenline, .body__card--desserts .greenline {
+.card__title .greenline {
   border-bottom: solid 5px #99E2D0;
 }
 
-.body__card {
+.card__row {
   display: flex;
-  flex-direction: column;
   width: 90%;
-  height: 70px;
+  height: 75px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-radius: 16px;
   background: white;
+  box-shadow: gainsboro 3px 3px 10px;
 }
 
-.card__title h3 {
-  margin: 16px 0 5px 10px;
-  font-weight: 800;
-}
-
-.card__texte {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin-left: 10px;
-}
-.card__texte p {
-  width: 70%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.card__texte span {
-  font-weight: 800;
-  width: 10%;
+.card__row:last-child {
+  margin-bottom: 0px;
 }
 
 .section__footer {
   display: flex;
-  margin-top: 40px;
 }
 .section__footer button {
   margin: auto;
 }
 .section__footer--adapteed {
   display: flex;
-  margin-top: 48px;
 }
 .section__footer--adapteed button {
   margin: auto;
@@ -313,26 +519,42 @@ button--full-width {
 
 @media screen and (min-width: 376px) and (max-width: 667px) {
   .main {
-    background: blue;
     max-width: 667px;
   }
 }
-@media screen and (min-width: 667px) and (max-width: 992px) {
+@media screen and (min-width: 667px) {
   .main {
-    background: green;
-    max-width: 992px;
+    max-width: 1480px;
+    margin: auto;
   }
-}
-@media screen and (min-width: 992px) and (max-width: 1440px) {
-  .main {
-    background: coral;
-    max-width: 1440px;
+
+  .body__title {
+    justify-content: center;
   }
-}
-@media screen and (min-width: 1140px) {
-  .main {
-    background: darkblue;
-    max-width: 2240px;
+
+  .card__title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .body__card--entrees, .body__card--plats, .body__card--desserts {
+    width: 80%;
+    margin: auto;
+  }
+
+  button {
+    width: 60%;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer .body__row {
+    justify-content: center;
+  }
+
+  .body__row i {
+    width: 4%;
   }
 }
 
